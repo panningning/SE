@@ -23,19 +23,19 @@
         "selectedIconPath": "images/home_s.png",
         "iconPath": "images/home.png",
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "Home"
       },
       {
         "selectedIconPath": "images/order_s.png",
         "iconPath": "images/order.png",
         "pagePath": "pages/order/list/list",
-        "text": "订单"
+        "text": "Order"
       },
       {
         "selectedIconPath": "images/mine_s.png",
         "iconPath": "images/mine.png",
         "pagePath": "pages/mine/mine",
-        "text": "我的"
+        "text": "Mine"
       }
     ]
   },

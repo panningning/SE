@@ -1,10 +1,12 @@
 <!--index.wxml-->
-<view>
+<view class="main">
   <view class="ad-box">
-    <image src='../../images/2-1.jpg' class="image_ad"></image>
+    <image src='../../images/background.png' class="image_ad"></image>
   </view>
-<!-- 顶部轮播图 -->
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+
+
+<!-- Swiper -->
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}" wx:key="unique">
       <swiper-item>
         <image src="{{item}}" class="slide-image" />
@@ -16,9 +18,9 @@
     <view class='btn-block' bindtap='golist'>
       <view class="btn_op1">Ordering Now</view>
     </view>
-    <!-- <view class='btn-block'>
-      <view class="btn_op2">预约订餐</view>
-    </view> -->
+    <view class='btn-block'>
+      <view class="btn_op2">Reservation</view>
+    </view>
   </view>
 
   <!-- Bottom Box -->

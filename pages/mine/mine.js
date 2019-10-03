@@ -26,7 +26,7 @@ Page({
   },
   bitphone:function(){
     wx.makePhoneCall({
-      phoneNumber: '1340000' 
+      phoneNumber: '8179011266' 
     })
   }
  

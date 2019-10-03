@@ -16,7 +16,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '订单详情'
+      title: 'Order Detail'
     })
     this.setData({
       cartList: wx.getStorageSync('cartList'),
@@ -26,10 +26,21 @@ Page({
     })
     
   },
-  gopay:function(){
-    wx.navigateTo({
-      url: '../detail/detail'
-    })
+  gopay: function () {
+    // wx.navigateTo({
+    //   url: '../detail/detail'
+    // })
+    wx.requestPayment(
+      {
+        'timeStamp': '',
+        'nonceStr': '',
+        'package': '',
+        'signType': 'MD5',
+        'paySign': '',
+        'success': function (res) { },
+        'fail': function (res) { },
+        'complete': function (res) { }
+      })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

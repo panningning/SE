@@ -16,7 +16,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '订单详情'
+      title: 'Order Detail'
     })
     this.setData({
       cartList: wx.getStorageSync('cartList'),

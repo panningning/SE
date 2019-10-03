@@ -34,10 +34,11 @@ Page({
     wx.showLoading({
       title: 'Wait',
     })
-    //easy-mock。
+    //mocky
+    //get food list
     wx.request({
       // url: 'https://easy-mock.com/mock/59abab95e0dc66334199cc5f/coco/aa',
-      url: 'http://www.mocky.io/v2/5d8eb65e3200000d00adeb18',
+      url: 'http://www.mocky.io/v2/5d9054c43000007000cacef8',
       method: 'GET',
       data: {},
       header: {
@@ -87,28 +88,17 @@ Page({
         sizeIndex: index
       });
     }
-    if (type == 1) {
-      this.setData({
-        sugarIndex: index
-      });
-    }
-    if (type == 2) {
-      this.setData({
-        temIndex: index
-      });
-    }
   },
-
+  //add to cart
   addToCart: function () {
     var a = this.data
     var addItem = {
       "name": a.listData[a.currentType].foods[a.currentIndex].name,
-      "price": a.listData[a.currentType].foods[a.currentIndex].specfoods[0].price,
-      "detail": a.size[a.sizeIndex] + "+" + a.sugar[a.sugarIndex] + "+" + a.tem[a.temIndex],
+      "price": a.listData[a.currentType].foods[a.currentIndex].price,
       "number": 1,
-      "sum": a.listData[a.currentType].foods[a.currentIndex].specfoods[0].price,
+      "sum": a.listData[a.currentType].foods[a.currentIndex].price,
     }
-    var sumMonney = a.sumMonney + a.listData[a.currentType].foods[a.currentIndex].specfoods[0].price;
+    var sumMonney = a.sumMonney + a.listData[a.currentType].foods[a.currentIndex].price;
     var cartList = this.data.cartList;
     cartList.push(addItem);
     this.setData({

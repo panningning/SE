@@ -27,13 +27,13 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "列表",
+					"name": "List",
 					"pathName": "pages/list/list",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "订单详情",
+					"name": "Order Details",
 					"pathName": "pages/order/balance/balance",
 					"query": ""
 				},
@@ -45,13 +45,13 @@
 				},
 				{
 					"id": -1,
-					"name": "订单列表",
+					"name": "Order List",
 					"pathName": "pages/order/list/list",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "订单详情",
+					"name": "Order Details",
 					"pathName": "pages/order/detail/detail",
 					"query": ""
 				}

@@ -4,11 +4,11 @@ const app = getApp()
 
 Page({
   data: {
-    //轮播图
+    //swiper
     imgUrls: [
-      '../../images/1.png',
-      '../../images/3.png',
-      '../../images/4.png'
+      '../../images/bun.jpg',
+      '../../images/noodle.jpg',
+      '../../images/pancake.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
